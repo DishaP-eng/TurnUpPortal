@@ -1,30 +1,37 @@
 ﻿<Properties StartupConfiguration="{E49D9813-7D8C-4A1F-A963-240B529EBD89}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Page/TMPage.cs">
+  <MonoDevelop.Ide.ItemProperties.TurnUpPortal PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/TM_Test.cs">
     <Files>
-      <File FileName="Program.cs" />
-      <File FileName="Page/LoginPage.cs" />
-      <File FileName="Page/HomePage.cs" />
-      <File FileName="Page/TMPage.cs" Line="9" Column="2" />
+      <File FileName="Page/LoginPage.cs" Line="1" Column="1" />
+      <File FileName="Page/HomePage.cs" Line="1" Column="1" />
+      <File FileName="Page/TMPage.cs" Line="85" Column="49" />
+      <File FileName="Test/TM_Test.cs" Line="6" Column="23" />
+      <File FileName="Utilities/CommonDriver.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TurnUpPortal">
             <Node name="TurnUpPortal">
-              <Node name="Page" expanded="True">
-                <Node name="TMPage.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Page" expanded="True" />
+              <Node name="Test" expanded="True">
+                <Node name="TM_Test.cs" selected="True" />
+              </Node>
+              <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.TurnUpPortal PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

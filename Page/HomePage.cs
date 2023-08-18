@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using TurnUpPortal.Utilities;
 
 namespace TurnUpPortal.Page
 {
@@ -25,6 +26,12 @@ namespace TurnUpPortal.Page
             //Click on Administration dropdown
             IWebElement administrationDropdown = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
             administrationDropdown.Click();
+
+            //Explicite wait
+            Wait.WaitToBeClickable(driver, "XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a", 7);
+
+
+
 
             //Click on Time and Material Option
             IWebElement tmOption = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a"));

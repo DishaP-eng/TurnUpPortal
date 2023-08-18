@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace TurnUpPortal.Page
@@ -46,15 +47,16 @@ namespace TurnUpPortal.Page
             goToLastPageButton.Click();
 
             IWebElement newCode = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
-            if (newCode.Text == "August01")
+            Assert.That(newCode.Text == "August2023", "Time record has not been created.");
+            // if (newCode.Text == "August01")
 
-            {
-                Console.WriteLine("Time record has been created successfully.");
-            }
-            else
-            {
-                Console.WriteLine("Time record hasn't been created.");
-            }
+            //{
+            Console.WriteLine("Time record has been created successfully.");
+           // }
+           //else
+           //{
+           //       Console.WriteLine("Time record hasn't been created.");
+           //}
 
         }
         public void EditTimeRecord(IWebDriver driver)

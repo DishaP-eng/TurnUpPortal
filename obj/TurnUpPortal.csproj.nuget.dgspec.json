@@ -39,9 +39,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NETCore.App": {
+            "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
-              "version": "[2.2.8, )"
+              "version": "[3.11.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Selenium.Support": {
               "target": "Package",
@@ -53,7 +65,7 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[115.0.5790.17000, )"
+              "version": "[116.0.5845.9600, )"
             }
           },
           "imports": [
