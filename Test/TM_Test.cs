@@ -12,9 +12,11 @@ using TurnUpPortal.Utilities;
 namespace TurnUpPortal.Test
 {
     [TestFixture]
+    [Parallelizable]
     public class TM_Test : CommonDriver
 
     {
+        
         [SetUp]
         public void SetUpTM()
         {
@@ -34,21 +36,21 @@ namespace TurnUpPortal.Test
             homePageObj.GoToTMPage(driver);
         }
 
-        [Test]
+        [Test,Order(1), Description("This test creates a new Time record with valid data")]
         public void CreateTime_Test()
         {
             TMPage tmPageObj = new TMPage();
             tmPageObj.CreateTimeRecord(driver);
         }
 
-        [Test]
+        [Test, Order(2), Description("This test Edit an existing Time record with valid data")]
         public void EditTime_Test()
         {
             TMPage tmPageObj = new TMPage();
             tmPageObj.EditTimeRecord(driver);
         }
 
-        [Test]
+        [Test, Order(3), Description("This test Delete an existing Time record with valid data")]
         public void DeleteTime_Test()
         {
             TMPage tmPageObj = new TMPage();

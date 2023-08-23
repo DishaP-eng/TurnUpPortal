@@ -15,15 +15,22 @@
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Page\" />
     <None Remove="Test\" />
     <None Remove="Utilities\" />
+    <None Remove="FeatureFiles\" />
+    <None Remove="StepDefinitions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Page\" />
     <Folder Include="Test\" />
     <Folder Include="Utilities\" />
+    <Folder Include="FeatureFiles\" />
+    <Folder Include="StepDefinitions\" />
   </ItemGroup>
 </Project>

@@ -103,3 +103,14 @@
 /Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/obj/Debug/net6.0/TurnUpPortal.pdb
 /Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/obj/Debug/net6.0/TurnUpPortal.genruntimeconfig.cache
 /Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/obj/Debug/net6.0/ref/TurnUpPortal.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/BoDi.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/Gherkin.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/TechTalk.SpecFlow.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/SpecFlow.Internal.Json.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/milan/Documents/TurnupPortalCode/TurnUpPortal/TurnUpPortal/TurnUpPortal/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

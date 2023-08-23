@@ -30,14 +30,15 @@ namespace TurnUpPortal.Page
             //Explicite wait
             Wait.WaitToBeClickable(driver, "XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a", 7);
 
-
-
-
             //Click on Time and Material Option
             IWebElement tmOption = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a"));
             tmOption.Click();
             Thread.Sleep(2000);
 
+
+        }
+        public void GoToEmployeePage(IWebDriver driver)
+        {
 
         }
     }
