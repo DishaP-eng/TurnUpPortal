@@ -8,20 +8,22 @@ using OpenQA.Selenium;
 
 namespace TurnUpPortal.Page
 {
-	public class TMPage
-	{
-		public void CreateTimeRecord(IWebDriver driver)
-		{
+    public class TMPage
+    {
+        public void CreateTimeRecord(IWebDriver driver)
+        {
             //Click on Create new button
             IWebElement createnewButton = driver.FindElement(By.XPath("//*[@id=\"container\"]/p/a"));
             createnewButton.Click();
 
             //Click on Typecode Dropdown
-            IWebElement typecodeDropdown = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
+            IWebElement typecodeDropdown =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
             typecodeDropdown.Click();
 
             //Click on Time Option
-            IWebElement timeOption = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
+            IWebElement timeOption =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
             timeOption.Click();
 
             //Enter value in code
@@ -34,7 +36,8 @@ namespace TurnUpPortal.Page
 
 
             //Enter value in Price per unit
-            IWebElement priceTextbox = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[4]/div/span[1]/span/input[1]"));
+            IWebElement priceTextbox =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[4]/div/span[1]/span/input[1]"));
             priceTextbox.SendKeys("367");
 
             //Click on save button
@@ -45,34 +48,33 @@ namespace TurnUpPortal.Page
             // Check if new Time record has been created successfully
             IWebElement goToLastPageButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[4]/a[4]/span"));
             goToLastPageButton.Click();
-
-            IWebElement newCode = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
-            Assert.That(newCode.Text == "August01", "Time record has not been created.");
-            // if (newCode.Text == "August01")
-
-            //{
-            // Console.WriteLine("Time record has been created successfully.");
-            // }
-            //else
-            //{
-            //       Console.WriteLine("Time record hasn't been created.");
-            //}
-
         }
+
+        public string GetCode(IWebDriver driver)
+        {
+            IWebElement newCode =
+                driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
+            return newCode.Text;
+        }
+
+
         public void EditTimeRecord(IWebDriver driver)
-		{
+        {
             //Click the Edit button
-            IWebElement editButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[1]"));
+            IWebElement editButton =
+                driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[1]"));
             editButton.Click();
             Thread.Sleep(1000);
 
             //Click on Typecode Dropdown
-            IWebElement edittypecodeDropdown1 = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
+            IWebElement edittypecodeDropdown1 =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[1]"));
             //
             edittypecodeDropdown1.Click();
 
             //Click on Time Option for edit
-            IWebElement edittimeOption = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[2]"));
+            IWebElement edittimeOption =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[2]"));
             edittimeOption.Click();
 
             //Edit the value in code
@@ -87,7 +89,8 @@ namespace TurnUpPortal.Page
             editdescriptionTextbox.SendKeys("DDD01");
 
             //Edit value in Price per unit
-            IWebElement overlappingTag = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[4]/div/span[1]/span/input[1]"));
+            IWebElement overlappingTag =
+                driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[4]/div/span[1]/span/input[1]"));
             IWebElement editPriceTextbox = driver.FindElement(By.Id("Price"));
             overlappingTag.Click();
             editPriceTextbox.Clear();
@@ -100,10 +103,13 @@ namespace TurnUpPortal.Page
             Thread.Sleep(2000);
 
             //Check if the record has been edited successfully
-            IWebElement gotolastpagebutton1 = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[4]/a[4]/span"));//*[@id="tmsGrid"]/div[4]/a[4]/span
+            IWebElement gotolastpagebutton1 =
+                driver.FindElement(
+                    By.XPath("//*[@id=\"tmsGrid\"]/div[4]/a[4]/span")); //*[@id="tmsGrid"]/div[4]/a[4]/span
             gotolastpagebutton1.Click();
 
-            IWebElement Newdesc = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[3]"));
+            IWebElement Newdesc =
+                driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[3]"));
             if (Newdesc.Text == "August2023")
             {
                 Console.WriteLine("New record has been edited successfully");
@@ -114,18 +120,21 @@ namespace TurnUpPortal.Page
                 Console.WriteLine("New record has not been edited");
             }
         }
-		public void DeleteTimeRecord(IWebDriver driver)
-		{
+
+        public void DeleteTimeRecord(IWebDriver driver)
+        {
             Thread.Sleep(1000);
             //Click on Delet button
-            IWebElement deleteButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[2]"));
+            IWebElement deleteButton =
+                driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[2]"));
             deleteButton.Click();
 
             Thread.Sleep(1000);
             //switch to the alert dialog
             driver.SwitchTo().Alert().Accept();
 
-            IWebElement newcode1 = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
+            IWebElement newcode1 =
+                driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
 
             if (newcode1.Text != "August2023")
             {
@@ -138,8 +147,9 @@ namespace TurnUpPortal.Page
                 Console.WriteLine("New record has not been deleted");
             }
 
-
         }
-	}
+    }
 }
+
+
 

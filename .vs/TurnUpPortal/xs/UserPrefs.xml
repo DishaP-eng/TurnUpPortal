@@ -1,47 +1,36 @@
 ﻿<Properties StartupConfiguration="{E49D9813-7D8C-4A1F-A963-240B529EBD89}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TurnUpPortal PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Page/TMPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/TM_Test.cs">
     <Files>
-      <File FileName="Page/LoginPage.cs" Line="12" Column="4" />
-      <File FileName="Page/HomePage.cs" Line="1" Column="1" />
-      <File FileName="Page/TMPage.cs" Line="53" Column="16" />
-      <File FileName="Test/TM_Test.cs" Line="15" Column="21" />
-      <File FileName="Utilities/CommonDriver.cs" Line="13" Column="1" />
+      <File FileName="Page/LoginPage.cs" />
+      <File FileName="Page/HomePage.cs" />
+      <File FileName="Page/TMPage.cs" Line="65" Column="32" />
+      <File FileName="Test/TM_Test.cs" Line="59" Column="1" />
+      <File FileName="Utilities/CommonDriver.cs" />
       <File FileName="Utilities/Wait.cs" />
       <File FileName="Page/EmployeesPage.cs" />
-      <File FileName="Test/EmployeesTest.cs" Line="13" Column="3" />
+      <File FileName="Test/EmployeesTest.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TurnUpPortal">
-            <Node name="TurnUpPortal">
-              <Node name="Page" expanded="True">
-                <Node name="TMPage.cs" selected="True" />
+            <Node name="TurnUpPortal" expanded="True">
+              <Node name="Page" expanded="True" />
+              <Node name="Test" expanded="True">
+                <Node name="TM_Test.cs" selected="True" />
               </Node>
-              <Node name="Test" expanded="True" />
               <Node name="Utilities" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="TurnUpPortal">
-            <Node name="TurnUpPortal">
-              <Node name="TurnUpPortal.Test">
-                <Node name="EmployeesTest" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TurnUpPortal PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -30,7 +30,9 @@
     <Folder Include="Page\" />
     <Folder Include="Test\" />
     <Folder Include="Utilities\" />
-    <Folder Include="FeatureFiles\" />
-    <Folder Include="StepDefinitions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="TMPage.cs" />
+    <Compile Remove="FeatureFiles\TMFeature.feature.cs" />
   </ItemGroup>
 </Project>
