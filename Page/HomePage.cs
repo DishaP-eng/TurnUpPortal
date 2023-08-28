@@ -39,7 +39,16 @@ namespace TurnUpPortal.Page
         }
         public void GoToEmployeePage(IWebDriver driver)
         {
-
+            //Click on Administration dropdown
+            IWebElement administrationDropdown = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
+            administrationDropdown.Click();
+            
+            Wait.WaitToBeClickable(driver,"xpath","/html/body/div[3]/div/div/ul/li[5]/ul/li[2]/a",9);
+            
+            //Click on Employees Option
+            IWebElement empOption = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[2]/a"));
+            empOption.Click();
+            Thread.Sleep(2000);
         }
     }
 }

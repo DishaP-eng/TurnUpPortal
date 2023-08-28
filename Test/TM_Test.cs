@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
@@ -41,13 +42,15 @@ namespace TurnUpPortal.Test
         {
             TMPage tmPageObj = new TMPage();
             tmPageObj.CreateTimeRecord(driver);
+            tmPageObj.CloseSteps(driver);
         }
 
         [Test, Order(2), Description("This test Edit an existing Time record with valid data")]
         public void EditTime_Test()
         {
             TMPage tmPageObj = new TMPage();
-            tmPageObj.EditTimeRecord(driver);
+            tmPageObj.EditTimeRecord(driver,"code","description");
+            tmPageObj.CloseSteps(driver);
         }
 
         [Test, Order(3), Description("This test Delete an existing Time record with valid data")]

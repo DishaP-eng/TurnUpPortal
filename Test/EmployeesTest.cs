@@ -6,51 +6,51 @@ using TurnUpPortal.Utilities;
 
 namespace TurnUpPortal.Test
 {
-    
-    [TestFixture]
-    [Parallelizable]
-    public class EmployeesTest:CommonDriver
+
+	[TestFixture]
+	[Parallelizable]
+	public class EmployeesTest : CommonDriver
 	{
-        [SetUp]
+		[SetUp]
 		public void EmployeeSetUp()
 		{
-            driver = new ChromeDriver();
+			driver = new ChromeDriver();
 
-            // Login page object initialization and definition
-            LoginPage loginPageObj = new LoginPage();
-            loginPageObj.LoginAction(driver);
+			// Login page object initialization and definition
+			LoginPage loginPageObj = new LoginPage();
+			loginPageObj.LoginAction(driver);
 
-            HomePage homePageObj = new HomePage();
-            homePageObj.GoToEmployeePage(driver);
-        }
+			HomePage homePageObj = new HomePage();
+			homePageObj.GoToEmployeePage(driver);
+		}
 
 		[Test]
 		public void CreateEmployee_Test()
-        {
-            EmployeesPage employeesPageObj = new EmployeesPage();
-            employeesPageObj.CreateEmployee(driver);
-        }
+		{
+			EmployeesPage employeePageObj = new EmployeesPage();
+			employeePageObj.CreateEmployee(driver);
+		}
 
-        [Test]
+		[Test]
 		public void EditEmployee_Test()
 		{
-            EmployeesPage employeesPageObj = new EmployeesPage();
-            employeesPageObj.EditEmployee(driver);
-        }
+			EmployeesPage employeesPageObj = new EmployeesPage();
+			employeesPageObj.EditEmployee(driver);
+		}
 
 		[Test]
 		public void DeleteEmployee_Test()
 		{
-            EmployeesPage employeesPage = new EmployeesPage();
-            employeesPage.DeleteEmployee(driver);
-        }
+			EmployeesPage employeesPage = new EmployeesPage();
+			employeesPage.DeleteEmployee(driver);
+		}
 
 		[TearDown]
 		public void TestDown()
 		{
-            driver.Quit();
-        }
-			
+			driver.Quit();
+		}
+
 	}
 }
 
